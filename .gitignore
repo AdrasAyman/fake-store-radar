@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# --- Frontend / Node ---
+node_modules/
+dist/
+.vite/
+*.local
+
+# --- Crawl artifacts ---
+backend/artifacts/
+*.png
+!docs/**/*.png
