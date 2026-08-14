@@ -226,3 +226,4 @@ dist/
 backend/artifacts/
 *.png
 !docs/**/*.png
+.DS_Store
