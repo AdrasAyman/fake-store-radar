@@ -3,6 +3,7 @@ from app.models import Brand
 
 BRANDS = [
     {"name": "Levi's", "official_domain": "levi.com", "keywords": ["levis", "levi"]},
+    {"name": "Levi's (levis.com)", "official_domain": "levis.com", "keywords": []},
     {"name": "Patagonia", "official_domain": "patagonia.com", "keywords": ["patagonia"]},
 ]
 
