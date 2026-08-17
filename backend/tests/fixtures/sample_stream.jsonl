@@ -1,0 +1,5 @@
+{"message_type":"certificate_update","data":{"leaf_cert":{"all_domains":["levis-outlet-sale.shop","www.levis-outlet-sale.shop"]}}}
+{"message_type":"certificate_update","data":{"leaf_cert":{"all_domains":["github.com"]}}}
+{"message_type":"certificate_update","data":{"leaf_cert":{"all_domains":["1evis.com"]}}}
+{"message_type":"certificate_update","data":{"leaf_cert":{"all_domains":["patagonia-clearance.store"]}}}
+{"message_type":"heartbeat","data":{}}
