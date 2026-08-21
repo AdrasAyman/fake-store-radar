@@ -1,0 +1,93 @@
+:root {
+  --ink: #16181d;
+  --muted: #6b7280;
+  --paper: #eceeec;
+  --surface: #fbfcfb;
+  --rule: #d2d6d2;
+  --flag: #8a5a12;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.shell { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 1rem;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.masthead h1 { margin: 0; font-size: 1.9rem; letter-spacing: -0.02em; }
+
+.count { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+.filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; }
+
+.filters input, .filters select {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  border-radius: 3px;
+}
+
+.filters input { flex: 1; min-width: 200px; }
+.filters input:focus, .filters select:focus { outline: 2px solid var(--ink); outline-offset: 1px; }
+
+table { width: 100%; border-collapse: collapse; background: var(--surface); }
+
+th {
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--rule); font-size: 0.85rem; }
+
+tbody tr:hover { background: var(--paper); }
+
+.domain { font-family: var(--mono); font-weight: 600; }
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.tag-perm { color: var(--flag); border-color: var(--flag); }
+
+.note { font-size: 0.9rem; color: var(--muted); padding: 2rem 0; }
+.note.error { color: var(--flag); }
+
+@media (max-width: 640px) {
+  .masthead { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  table { font-size: 0.78rem; }
+}
